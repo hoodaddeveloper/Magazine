@@ -1,8 +1,8 @@
 *,
 ::before,
 ::after {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  font-family: 'Baskervville', serif;
   color: linen;
+  font-family: 'Baskervville', serif;
   background-color: rgb(20, 30, 40);
 }
 
@@ -30,9 +30,9 @@ a {
 }
 
 main {
+  row-gap: 3rem;
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
-  row-gap: 3rem;
 }
 
 img {
@@ -46,29 +46,29 @@ hr {
 }
 
 .heading {
-  grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   row-gap: 1.5rem;
+  grid-column: 2 / 3;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .text {
-  grid-column: 2 / 3;
   font-size: 1.8rem;
-  letter-spacing: 0.6px;
+  grid-column: 2 / 3;
   column-width: 25rem;
   text-align: justify;
+  letter-spacing: 0.6px;
 }
 
 .hero {
-  grid-column: 1 / -1;
   position: relative;
+  grid-column: 1 / -1;
 }
 
 .hero-title {
+  font-size: 8rem;
   text-align: center;
   color: orangered;
-  font-size: 8rem;
 }
 
 .hero-subtitle {
