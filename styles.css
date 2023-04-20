@@ -20,7 +20,11 @@ h1 {
   font-family: 'Anton', sans-serif;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -93,16 +97,16 @@ hr {
 .social-icons {
   display: grid;
   font-size: 3rem;
-  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .first-paragraph::first-letter {
+  float: left;
   font-size: 6rem;
   color: orangered;
-  float: left;
   margin-right: 1rem;
 }
 
@@ -123,33 +127,35 @@ hr {
 
 .text-with-images {
   display: grid;
-  grid-template-columns: 1fr 2fr;
   column-gap: 3rem;
   margin-bottom: 3rem;
+  grid-template-columns: 1fr 2fr;
 }
 
 .lists {
-  list-style-type: none;
   margin-top: 2rem;
+  list-style-type: none;
 }
 
 .lists li {
   margin-bottom: 1.5rem;
 }
 
-.list-title, .list-subtitle {
+.list-title,
+.list-subtitle {
   color: #00beef;
 }
 
 .image-wrapper {
+  gap: 2rem;
   display: grid;
+  place-items: center;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(3, min-content);
-  gap: 2rem;
-  place-items: center;
 }
 
-.image-1, .image-3 {
+.image-1,
+.image-3 {
   grid-column: 1 / -1;
 }
 
@@ -169,19 +175,19 @@ hr {
   .hero-title {
     font-size: 6rem;
   }
-  
-  .hero-subtitle,
-  .author,
+
   .quote,
+  .author,
+  .hero-subtitle,
   .list-title {
     font-size: 1.8rem;
   }
-  
+
   .social-icons {
     font-size: 2rem;
   }
 
   .text {
     font-size: 1.6rem;
-  } 
+  }
 }
